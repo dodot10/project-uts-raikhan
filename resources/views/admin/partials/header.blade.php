@@ -19,7 +19,7 @@
         </div>
         
         <a href="{{ route('admin.index') }}" class="brand-logo">
-            <img src="{{ asset('admin/assets/img/logo.png') }}" class="invert-dark" alt="" height="20">
+            <img src="{{ asset('assets/admin/assets/img/logo.png') }}" class="invert-dark" alt="" height="20">
         </a>
     </div>
     <!-- END brand -->
@@ -47,7 +47,7 @@
         <div class="menu-item dropdown">
             <a href="#" data-bs-toggle="dropdown" data-display="static" class="menu-link">
                 <div class="menu-img online">
-                    <img src="{{ asset('admin/assets/img/user/user.jpg') }}" alt="" class="ms-100 mh-100 rounded-circle">
+                    <img src="{{ asset('assets/admin/assets/img/user/user.jpg') }}" alt="" class="ms-100 mh-100 rounded-circle">
                 </div>
                 <div class="menu-text">johnsmith@studio.com</div>
             </a>

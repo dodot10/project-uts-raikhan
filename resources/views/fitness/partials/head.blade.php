@@ -14,11 +14,11 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
 <!-- Libraries Stylesheet -->
-<link rel="stylesheet" href="{{ asset('fitness/lib/animate/animate.min.css') }}"/>
-<link href="{{ asset('fitness/lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
+<link rel="stylesheet" href="{{ asset('assets/fitness/lib/animate/animate.min.css') }}"/>
+<link href="{{ asset('assets/fitness/lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
 
 <!-- Customized Bootstrap Stylesheet -->
-<link href="{{ asset('fitness/css/bootstrap.min.css') }}" rel="stylesheet">
+<link href="{{ asset('assets/fitness/css/bootstrap.min.css') }}" rel="stylesheet">
 
 <!-- Template Stylesheet -->
-<link href="{{ asset('fitness/css/style.css') }}" rel="stylesheet">
+<link href="{{ asset('assets/fitness/css/style.css') }}" rel="stylesheet">

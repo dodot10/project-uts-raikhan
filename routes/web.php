@@ -4,38 +4,26 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FitnessController;
 use App\Http\Controllers\AdminController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
-
-// Fitness Landing Page Routes
-Route::prefix('fitness')->name('fitness.')->group(function () {
-    Route::get('', [FitnessController::class, 'index'])->name('index');
-    Route::get('about', [FitnessController::class, 'about'])->name('about');
-    Route::get('course', [FitnessController::class, 'course'])->name('course');
-    Route::get('blog', [FitnessController::class, 'blog'])->name('blog');
-    Route::get('contact', [FitnessController::class, 'contact'])->name('contact');
-    Route::get('feature', [FitnessController::class, 'feature'])->name('feature');
+// Fitness routes
+Route::controller(FitnessController::class)->group(function () {
+    Route::get('/fitness', 'index')->name('fitness.index');
+    Route::get('/fitness/about', 'about')->name('fitness.about');
+    Route::get('/fitness/course', 'course')->name('fitness.course');
+    Route::get('/fitness/blog', 'blog')->name('fitness.blog');
+    Route::get('/fitness/contact', 'contact')->name('fitness.contact');
+    Route::get('/fitness/feature', 'feature')->name('fitness.feature');
 });
 
-// Admin Dashboard Routes
-Route::prefix('admin')->name('admin.')->group(function () {
-    Route::get('', [AdminController::class, 'index'])->name('index');
-    Route::get('calendar', [AdminController::class, 'calendar'])->name('calendar');
-    Route::get('form-elements', [AdminController::class, 'formElements'])->name('formElements');
-    Route::get('login', [AdminController::class, 'login'])->name('login');
-    Route::get('table-plugins', [AdminController::class, 'tablePlugins'])->name('tablePlugins');
-    Route::get('modal-notification', [AdminController::class, 'modalNotification'])->name('modalNotification');
+// Admin routes
+Route::controller(AdminController::class)->group(function () {
+    Route::get('/admin', 'index')->name('admin.index');
+    Route::get('/admin/calendar', 'calendar')->name('admin.calendar');
+    Route::get('/admin/form-elements', 'formElements')->name('admin.formElements');
+    Route::get('/admin/login', 'login')->name('admin.login');
+    Route::get('/admin/table-plugins', 'tablePlugins')->name('admin.tablePlugins');
+    Route::get('/admin/modal-notification', 'modalNotification')->name('admin.modalNotification');
 });
 
-// Default route - redirect to fitness landing page
 Route::get('/', function () {
     return redirect()->route('fitness.index');
 });

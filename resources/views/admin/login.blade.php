@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>Studio | Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="{{ asset('admin/assets/css/vendor.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('admin/assets/css/app.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/admin/assets/css/vendor.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/admin/assets/css/app.min.css') }}" rel="stylesheet">
 </head>
 <body class="pace-top">
     <div id="app" class="app">
@@ -41,7 +41,7 @@
         </div>
     </div>
     
-    <script src="{{ asset('admin/assets/js/vendor.min.js') }}"></script>
-    <script src="{{ asset('admin/assets/js/app.min.js') }}"></script>
+    <script src="{{ asset('assets/admin/assets/js/vendor.min.js') }}"></script>
+    <script src="{{ asset('assets/admin/assets/js/app.min.js') }}"></script>
 </body>
 </html>

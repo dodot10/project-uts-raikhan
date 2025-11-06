@@ -31,7 +31,7 @@
             <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.2s">
                 <div class="about-img h-100">
                     <div class="about-img-inner d-flex h-100">
-                        <img src="{{ asset('fitness/img/about-2.png') }}" class="img-fluid w-100" style="object-fit: cover;" alt="">
+                        <img src="{{ asset('assets/fitness/img/about-2.png') }}" class="img-fluid w-100" style="object-fit: cover;" alt="">
                     </div>
                 </div>
             </div>
